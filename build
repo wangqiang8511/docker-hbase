@@ -1,0 +1,4 @@
+. VERSION
+sed -e "s/HBASE_VERSION hbase-1.0.0/HBASE_VERSION hbase-${HBASE_VERSION}/g" Dockerfile > tmp.dockerfile
+docker build -f tmp.dockerfile -t ${IMAGE}-${HBASE_VERSION} .
+docker tag -f ${IMAGE}-${HBASE_VERSION}:latest ${IMAGE}-${HBASE_VERSION}:$TAG
