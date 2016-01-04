@@ -1,4 +1,4 @@
-# Apache Hadoop 2.4 - HDFS only
+# Apache Hbase
 
 Simple docker images for hbase
 
